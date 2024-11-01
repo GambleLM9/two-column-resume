@@ -1,0 +1,133 @@
+/*Reset Margins and Padding*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Main Container*/
+.container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*Makes 3 columns, of equal size*/
+    grid-template-rows: repeat(3, 1fr); /*Makes 3 rows, of equal size*/
+    grid-template-areas: 
+    "sidebar content content"
+    "sidebar content content"
+    "sidebar content content"; /*Assigns names to the areas of the grid columns/rows*/
+}
+
+/*Sidebar*/
+.sidebar{
+    grid-area: sidebar; /*Assigns the div to the are "sidebar"*/
+    background-color: rgb(81, 81, 81);
+    color: white;
+}
+/*Sidebar: Profile*/
+img{
+    width:50%;
+    margin-left:25%;
+    margin-top:20px;
+    border: 2px white solid;
+    border-radius: 120px;
+}
+.profile{
+    padding: 10px;
+    text-align: center;
+    line-height: 35px;
+}
+.profile h1{
+    font-size: 2em;
+}
+
+/*Sidebar: Contact*/
+.contact h2{
+    padding-bottom: 10px;
+    border-bottom: 3px solid white;
+}
+
+.contact p{
+    padding: 10px 0px 0px 0px;
+    line-height: 20px;
+}
+
+.contact{
+    padding: 20px;
+}
+
+/*Sidebar: Skills*/
+.skills h2{
+    padding-bottom: 10px;
+    border-bottom: 3px solid white;
+}
+
+.skills p{
+    padding: 10px 0px 0px 0px;
+    line-height: 20px;
+}
+
+.skills{
+    padding: 20px;
+}
+
+/*Main Content*/
+.content{
+    grid-area: content;
+    padding: 40px;
+    background-color: rgb(243, 243, 243);
+}
+
+/*Main Content: Summary*/
+.summary h2{
+    padding: 10px;
+    color: rgb(81, 81, 81);
+}
+
+.summary p{
+    padding: 10px;
+    line-height: 25px;
+}
+
+/*Main Content: Experience*/
+.experience h2{
+    padding: 10px;
+    color: rgb(81, 81, 81);
+}
+.workbox{
+    padding: 10px;
+}
+.workbox p{
+    line-height: 25px;
+}
+#faint{
+    opacity: .5;
+}
+
+/*Main Content: Education*/
+.education h2{
+    padding: 10px;
+    color: rgb(81, 81, 81);
+}
+.edubox{
+    padding: 10px;
+}
+.edubox p{
+    padding-bottom: 20px;
+}
+
+/*Main Content: Projects*/
+.projects h2{
+    padding: 10px;
+    color: rgb(81, 81, 81);
+}
+.probox{
+    padding: 10px;
+}
+.probox p{
+    padding-bottom: 20px;
+}
